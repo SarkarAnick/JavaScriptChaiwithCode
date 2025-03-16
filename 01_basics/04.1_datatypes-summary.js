@@ -52,8 +52,38 @@ const myFunction = function(){
   }
 
 
-  console.log();
+  
   
 
   //**  read more about datatypes from **
   // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//********************************************************************************
+
+/* MEMORY PART
+   a. Stack ( used by all primitive datatypes ) -- when stack memory is used it means we get a copy of the variable we declared
+   b. Heap ( non-primitive datatypes ) -- when heap memory is used we get reference of original variable 
+*/
+
+let myYoutubeName = "anicksarkar" // primitive datatype -- using stack
+
+let anotherName = myYoutubeName
+console.log(anotherName);
+anotherName = "Sreya"
+console.log(anotherName);
+console.log(myYoutubeName); // original value is not changed . copy is chaned
+
+//NON-PRIMITIVE DATATYPE -- (uses heap)
+let userOne = {                     
+      email:"user@google.com",
+      upi: " user@ybl"
+}
+
+let userTwo= userOne
+userTwo.email = "user2@google.com"
+console.log(userOne.email); //gets updated by userTwo email
+console.log(userTwo.email);
+
+
+//the variable references 'userOne' and 'userTwo' are declared in stack but the data is in heap
+// userTwo is actually referencing to the same dataset from heap as of userOne
