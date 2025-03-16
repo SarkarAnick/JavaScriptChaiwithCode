@@ -7,7 +7,7 @@ because of issue in block scope and functional scope
 */
 
 let  accountState; //will show undefined
-accountCity = "kolkata"
+accountCity = "deli"
 
 //accountId = 2 // not allowed to change const declared variables
 console.log(accountId);

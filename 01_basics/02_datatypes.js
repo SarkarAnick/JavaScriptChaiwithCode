@@ -2,3 +2,4 @@
 
 //alert(3+3)// will show error as we are using node.js not browser
 //anick sakrar
+console.log("hello")
