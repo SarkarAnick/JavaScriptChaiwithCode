@@ -42,9 +42,10 @@ console.log(typeof bigNumber);
 const heroes = ["superman","batman","antman"]
 //OBJECT
 let myObj = { //can contain any datatype primitive/reference
-    name : "anick",
+    name : "anick", //key : value
     age : 22,
 }
+let obj1 = {} //creating empty object
 //FUNCTION -  there are multiple ways to declare 
 // - here we will see the variable type way
 const myFunction = function(){
